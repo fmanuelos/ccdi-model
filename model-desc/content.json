@@ -39,6 +39,7 @@
                         { "name": "Study", "isChecked": false, "group": "category" },
                         { "name": "Sample", "isChecked": false, "group": "category" },
                         { "name": "Administrative", "isChecked": false, "group": "category" },
+                        { "name": "Analysis", "isChecked": false, "group": "category" },
                         { "name": "Data_File", "isChecked": false, "group": "category" }
                     ]
                 },
