@@ -14,9 +14,9 @@
             }
         }
     },
-    "current-version": "1.0.0",
+    "current-version": "2.1.0",
     "versions": [
-        "1.0.0"
+        "2.1.0"
     ],
     "ui_settings": {
         "name": "CCDI",
