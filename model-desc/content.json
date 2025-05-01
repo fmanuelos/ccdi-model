@@ -1,23 +1,19 @@
 {
-    "model-files": [
-        "ccdi_model.yml",
-        "ccdi_model_props.yml"
-    ],
+    "model-files": ["ccdi-model.yml", "ccdi-model-props.yml"],
     "readme-file": "README.md",
+    "loading-file": "ccdi-file-examples.zip",
     "semantics": {
         "file-nodes": {
-            "data_file": {
-                "id-field": "data_file_uuid",
-                "name-field": "data_file_name",
-                "size-field": "data_file_size",
-                "md5-field": "data_file_checksum_value"
+            "file": {
+                "id-field": "file_id",
+                "name-field": "file_name",
+                "size-field": "file_size",
+                "md5-field": "md5sum"
             }
         }
     },
-    "current-version": "2.1.0",
-    "versions": [
-        "2.1.0"
-    ],
+    "current-version": "1.0.0",
+    "versions": ["1.0.0"],
     "ui_settings": {
         "name": "CCDI",
         "assets": null,
@@ -25,11 +21,11 @@
             "pageTitle": "CCDI Data Model",
             "pdfConfig": {
                 "fileType": "pdf",
-                "prefix": "CCDI_",
-                "downloadPrefix": "CCDI_",
-                "fileTransferManifestName": "CCDI_",
+                "prefix": "ccdi_",
+                "downloadPrefix": "ccdi_",
+                "fileTransferManifestName": "ccdi_",
                 "iconSrc": "logo",
-                "footnote": "https://hub.datacommons.cancer.gov/model-navigator/CCDI",
+                "footnote": "https://hub.datacommons.cancer.gov/model-navigator/ccdi",
                 "landscape": true
             },
             "facetFilterSearchData": [
@@ -40,41 +36,11 @@
                     "tooltip": "category",
                     "show": true,
                     "checkboxItems": [
-                        {
-                            "name": "Administrative",
-                            "isChecked": false,
-                            "group": "category"
-                        },
-                        {
-                            "name": "Analysis",
-                            "isChecked": false,
-                            "group": "category"
-                        },
-                        {
-                            "name": "Biospecimen",
-                            "isChecked": false,
-                            "group": "category"
-                        },
-                        {
-                            "name": "Clinical",
-                            "isChecked": false,
-                            "group": "category"
-                        },
-                        {
-                            "name": "Data_File",
-                            "isChecked": false,
-                            "group": "category"
-                        },
-                        {
-                            "name": "Participant",
-                            "isChecked": false,
-                            "group": "category"
-                        },
-                        {
-                            "name": "Study",
-                            "isChecked": false,
-                            "group": "category"
-                        }
+                        { "name": "Clinical", "isChecked": false, "group": "category" },
+                        { "name": "Study", "isChecked": false, "group": "category" },
+                        { "name": "Sample", "isChecked": false, "group": "category" },
+                        { "name": "Administrative", "isChecked": false, "group": "category" },
+                        { "name": "Data_File", "isChecked": false, "group": "category" }
                     ]
                 },
                 {
@@ -84,16 +50,8 @@
                     "tooltip": "assignment",
                     "show": true,
                     "checkboxItems": [
-                        {
-                            "name": "Core",
-                            "isChecked": false,
-                            "group": "assignment"
-                        },
-                        {
-                            "name": "Extended",
-                            "isChecked": false,
-                            "group": "assignment"
-                        }
+                        { "name": "Core", "isChecked": false, "group": "assignment" },
+                        { "name": "Extended", "isChecked": false, "group": "assignment" }
                     ]
                 },
                 {
@@ -103,16 +61,8 @@
                     "tooltip": "class",
                     "show": true,
                     "checkboxItems": [
-                        {
-                            "name": "Primary",
-                            "isChecked": false,
-                            "group": "class"
-                        },
-                        {
-                            "name": "Secondary",
-                            "isChecked": false,
-                            "group": "class"
-                        }
+                        { "name": "Primary", "isChecked": false, "group": "class" },
+                        { "name": "Secondary", "isChecked": false, "group": "class" }
                     ]
                 },
                 {
@@ -122,21 +72,9 @@
                     "tooltip": "inclusion",
                     "show": true,
                     "checkboxItems": [
-                        {
-                            "name": "Optional",
-                            "isChecked": false,
-                            "group": "optional"
-                        },
-                        {
-                            "name": "Preferred",
-                            "isChecked": false,
-                            "group": "preferred"
-                        },
-                        {
-                            "name": "Required",
-                            "isChecked": false,
-                            "group": "required"
-                        }
+                        { "name": "Optional", "isChecked": false, "group": "optional" },
+                        { "name": "Preferred", "isChecked": false, "group": "preferred" },
+                        { "name": "Required", "isChecked": false, "group": "required" }
                     ]
                 },
                 {
@@ -146,16 +84,8 @@
                     "tooltip": "inclusion",
                     "show": true,
                     "checkboxItems": [
-                        {
-                            "name": "no",
-                            "isChecked": false,
-                            "group": "no"
-                        },
-                        {
-                            "name": "yes",
-                            "isChecked": false,
-                            "group": "yes"
-                        }
+                        { "name": "no", "isChecked": false, "group": "no" },
+                        { "name": "yes", "isChecked": false, "group": "yes" }
                     ]
                 }
             ],
