@@ -1,6 +1,7 @@
 {
     "model-files": ["ccdi-model.yml", "ccdi-model-props.yml"],
     "readme-file": "README.md",
+    "loading-file": "ccdi-file-examples.zip",
     "semantics": {
         "file-nodes": {
             "file": {
