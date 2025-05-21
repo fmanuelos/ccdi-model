@@ -27,7 +27,7 @@
                 "iconSrc": "logo",
                 "footnote": "https://ccdi-dev.cancer.gov/data-model",
                 "landscape": true,
-                "enabled": true
+                "enabled": false
             },
             "facetFilterSearchData": [
                 {
